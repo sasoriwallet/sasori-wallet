@@ -232,12 +232,6 @@ Sasori is wallet software. **Always back up your wallet before storing real fund
 
 The project is open source, but users should still verify the software they download and protect their wallet backups and passwords.
 
-## 📜 License
-
-Sasori Wallet is released under the **MIT License**.
-
----
-
 ### 🦂 Sasori Wallet
 
 **Local. Open source. Built for WAM.**
