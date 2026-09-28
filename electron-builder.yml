@@ -1,0 +1,21 @@
+appId: org.wamcoin.wallet
+productName: Sasori Wallet
+directories:
+  buildResources: build
+  output: dist
+files:
+  - out/**/*
+  - package.json
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  artifactName: ${productName}-Setup-0.0.1v.${ext}
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+asarUnpack:
+  - '**/*.node'

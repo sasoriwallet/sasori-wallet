@@ -1,0 +1,39 @@
+{
+  "name": "sasori-wallet",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Sasori Wallet \u2014 open-source WAM Coin desktop wallet for Windows",
+  "main": "out/main/index.js",
+  "author": "Sasori Wallet contributors",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "build:win": "electron-vite build && electron-builder --win",
+    "build:unpack": "electron-vite build && electron-builder --dir",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "bech32": "^2.0.0",
+    "bs58check": "^3.0.1",
+    "jsqr": "^1.4.0",
+    "qrcode": "^1.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.0",
+    "vitest": "^1.2.2"
+  }
+}
